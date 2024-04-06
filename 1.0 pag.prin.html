@@ -18,7 +18,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card navbar estil-letr" id="myNavbar">
-    <img src="Ims/logo.jpg" class="img-logo">
+    <img src="Ims/logo.png" class="img-logo">
     <button class="button2" onclick="redirigir()">
       WhatsApp
       <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
@@ -31,17 +31,17 @@
       <a href="1.0 pag.prin.html" 
       style="border-bottom: 2px solid rgb(226, 211, 6)" 
       class="w3-bar-item w3-button"><b>RIM</b></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
+      <a href="2.0 nosotros.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
       <div class="w3-dropdown-hover">
         <button class="w3-button" style="color: white;font-family:sans-serif;font-size: 16.5px;"><i class="fa fa-th"></i> SERVICIOS</button>
         <div class="w3-dropdown-content w3-bar-block w3-border">
-          <a href="#" class="w3-bar-item w3-button secc-uno"> MANTENIMIENTO</a>
-          <a href="#" class="w3-bar-item w3-button secc-dos"> SCANNER</a>
-          <a href="#" class="w3-bar-item w3-button secc-tres" > REFACCIONES</a>
+          <a href="3.0 servi-mantenimiento.html" class="w3-bar-item w3-button secc-uno"> MANTENIMIENTO</a>
+          <a href="3.1 servi-scanner.html" class="w3-bar-item w3-button secc-dos"> SCANNER</a>
+          <a href="3.2 servi-refacciones.html" class="w3-bar-item w3-button secc-tres" > REFACCIONES</a>
         </div>
       </div>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> VENTA DE MOTOS</a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+      <a href="4.0 venta-de-motos.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> VENTA DE MOTOS</a>
+      <a href="5.0 contacto.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
     </div>
   <!--////////////////////////////////// ACOPLE A PANTALLAS PEQUES ////////////////////////////////-->
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -69,7 +69,7 @@ style="display:none" id="mySidebar">
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">VENTA DE MOTOS</a>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
 </nav>
-  <!--////////////////////////////////// BIENVENIDA ////////////////////////////////-->
+<!--////////////////////////////////// BIENVENIDA ////////////////////////////////-->
 <div class="w3-row bienv" >
   <h1 class="letra-bienv">¡BIENVENIDO AL TALLER ROLLING INDIE MOTOS!</h1>
 </div>
@@ -106,176 +106,259 @@ style="display:none" id="mySidebar">
   </div>  
 </div>
 
-<br>
+
+<!--////////////////////////////////// BIENVENIDA ////////////////////////////////-->
+<div class="w3-row" style="text-align: center;">
+  <h1 class="letra-bienv">¡NUESTROS SERVICIOS!</h1>
+</div>
 
 <div class="w3-container " style="margin-block-end: 40px;">
   <div class="w3-row-padding w3-center w3-margin-top">
     <div class="w3-quarter">
       <div class="w3-card w3-container carta">
-        <i class="material-icons" style="color:#B87333;font-size: 60px;">scanner</i>
-        <p style="color: black;"><b>SCANNER</b></p>
+        <i class="material-icons" style="color:darkblue;font-size: 60px;">scanner</i>
         <br>
-        <section>
-          
+        <button class="btn-select margen" id="btn">
+          <a class="letras-bot-select" 
+                  href="3.1 servi-scanner.html">SCANNER</button></a>
+        <section style="font-size: 17px;">
+          <p>¿Notas algo fuera de lo común en el rendimiento de tu moto?</p>
+          <p > ¡Nuestro servicio de escáner para motocicletas es perfecto!
+            <br>
+            
+              Te ofrece una revisión completa y precisa de los sistemas electrónicos de tu vehículo, 
+              asegurando que todo funcione a la perfección.</p>
+              
         </section>
       </div>
     </div>
 
     <div class="w3-quarter">
       <div class="w3-card w3-container carta" >
-        <i class="material-icons" style="color:#B87333;font-size: 60px;">construction</i>
-        <p style="color: black;"><b>MANTENIMIENTO</b></p>
+        <i class="material-icons" style="color:darkblue;font-size: 60px;">construction</i>
+        <br>
+        <button class="btn-select margen" id="btn">
+          <a class="letras-bot-select" 
+                  href="3.0 servi-mantenimiento.html">MANTENIMIENTO</button></a>
+                  <section style="font-size: 17px;">
+                    <p>¿Quieres asegurarte de que tu moto siempre esté lista para rodar?</p>
+                    <p > Nuestro servicio de mantenimiento para motocicletas está 
+                      diseñado para garantizar el máximo rendimiento y seguridad de tu vehículo, 
+                      extendiendo su vida útil y asegurando que cada viaje sea tan bueno como el primero.</p>
+                  </section>
       </div>
     </div>
 
     <div class="w3-quarter">
       <div class="w3-card w3-container carta">
-        <i class="fa fa-shopping-basket" aria-hidden="true" style="color:#B87333;font-size: 60px;margin-top: 5px;"></i>
-        <p style="color: black;"><b>REFACCIONES</b></p>
+        <i class="fa fa-shopping-basket" aria-hidden="true" style="color:darkblue;font-size: 60px;margin-top: 5px;margin-block-end: 5PX;"></i>
+        <br>
+        <button class="btn-select margen" id="btn">
+          <a class="letras-bot-select" 
+                  href="3.2 servi-refacciones.html">REFACCIONES</button></a>
+                  <section style="font-size: 17px;">
+                    <p>¿Buscas mejorar y modificar tu moto? ¿Necesitas reemplazar una pieza desgastada?</p>
+                    <p > Nuestro servicio de mantenimiento para motocicletas está 
+                      diseñado para garantizar el máximo rendimiento y seguridad de tu vehículo, 
+                      extendiendo su vida útil y asegurando que cada viaje sea tan bueno como el primero.</p>
+                  </section>
       </div>
     </div>
 
     <div class="w3-quarter">
       <div class="w3-card w3-container carta">
-        <i class="fa fa-motorcycle" style="color:#B87333;font-size: 60px;" aria-hidden="true"></i>
-        <p style="color: black;"><b>VENTA DE MOTOS</b></p>
+        <i class="fa fa-motorcycle" style="color:darkblue;font-size: 60px;" aria-hidden="true"></i>
+        <br>
+        <button class="btn-select margen" id="btn">
+          <a class="letras-bot-select" 
+                  href="4.0 venta-de-motos.html">VENTA DE MOTOS</button></a>
+                  <section style="font-size: 17px;">
+                    <p>¿Estás buscando tu primera moto o quizás deseas añadir una nueva joya a tu colección?</p>
+                    <p > En nuestro establecimiento, te ofrecemos una amplia gama de motocicletas para todos los 
+                      gustos y necesidades, desde modelos urbanos ágiles hasta potentes máquinas para largas 
+                      distancias.</p>
+                  </section>
       </div>
     </div>
 
   </div>
 </div>
-
-<div class="w3-container fondo" style="margin-block-end: 25px;">
-  <div class="w3-row"style="margin-block-end: 25px;">
+<!---------------------------------------------------------------encabezado de marcas--------------------------------------->
+<div class="w3-container fondo" style="margin-block-end: 15px;">
+  <div class="w3-row"style="margin-block-end: 1px;">
     <h1 class="trab letra-bienv"> <b>TRABAJAMOS CON ESTAS MARCAS:</b></h1>
+<!---------------------------------------------------ZONA DE IMAGENES----------------------------------------------->
+<!--------------------------------------------------------PRIMER ZONA-------------------------------------------------->
     <div class="w3-row-padding w3-center w3-margin-top">
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-dina" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-dina" style="min-height:150px;">
         <img src="Ims/logos/logo-dinamo.png" class="dinamo">
         </div>
       </div>
       
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-bmw" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-bmw" style="min-height:150px">
         <img src="Ims/logos/BMW-logo.png" class="BMW">
         </div>
       </div>
       
-      <div class="w3-third">
-        <div class="w3-card w3-container fond sombr-aim" style="min-height:250px;">
-    
+      <div class="w3-quarter">
+        <div class="w3-card w3-container fond sombr-aim" style="min-height:150px;">
           <img src="Ims/logos/logo-aima.png" class="aima">
         </div>
       </div>
-    </div>
-  </div>
-  <div class="w3-row"style="margin-block-end: 25px;">
-    <div class="w3-row-padding w3-center w3-margin-top">
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-duca" style="min-height:250px">
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-duca" style="min-height:150px">
         <img src="Ims/logos/ducati-logo.png" class="ducati">
         </div>
       </div>
+
+    </div>
+  </div>
+<!--------------------------------------------------------PRIMER ZONA-------------------------------------------------->
+  <div class="w3-row"style="margin-block-end: 1px;">
+    <div class="w3-row-padding w3-center w3-margin-top">
       
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-har" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-har" style="min-height:150px">
         <img src="Ims/logos/harley-logo.png" class="harley">
         </div>
       </div>
       
-      <div class="w3-third">
-        <div class="w3-card w3-container fond sombr-hon" style="min-height:250px;">
-    
+      <div class="w3-quarter">
+        <div class="w3-card w3-container fond sombr-hon" style="min-height:150px;">
           <img src="Ims/logos/Honda-Logo.png" class="honda">
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="w3-row"style="margin-block-end: 25px;">
-    <div class="w3-row-padding w3-center w3-margin-top">
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-ind" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-ind" style="min-height:150px">
         <img src="Ims/logos/indian-logo.png" class="indian">
         </div>
       </div>
       
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-ita" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-ita" style="min-height:150px">
         <img src="Ims/logos/Italika-logo.png" class="italika">
         </div>
       </div>
+
+    </div>
+  </div>
+<!--------------------------------------------------------TERCER ZONA-------------------------------------------------->
+
+  <div class="w3-row"style="margin-block-end: 1px;">
+    <div class="w3-row-padding w3-center w3-margin-top">
       
-      <div class="w3-third">
-        <div class="w3-card w3-container fond sombr-izu" style="min-height:250px;">
-    
+      <div class="w3-quarter">
+        <div class="w3-card w3-container fond sombr-izu" style="min-height:150px;">
           <img src="Ims/logos/izuka-logo.png" class="izuka">
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="w3-row"style="margin-block-end: 25px;">
-    <div class="w3-row-padding w3-center w3-margin-top">
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-kaw" style="min-height:250px">
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-kaw" style="min-height:150px">
         <img src="Ims/logos/Kawasaki-logo.png" class="kawasaki">
         </div>
       </div>
-      
-      <div class="w3-third">
-        <div class="w3-card w3-container sombr-mbm" style="min-height:250px">
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-container sombr-mbm" style="min-height:150px">
         <img src="Ims/logos/mbmotos-logo.png" class="mbmotos">
         </div>
       </div>
-      
-      <div class="w3-third">
-        <div class="w3-card w3-container fond sombr-suz" style="min-height:250px;">
-    
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-container fond sombr-suz" style="min-height:150px;">
           <img src="Ims/logos/Suzuki-logo.png" class="suzuki">
         </div>
       </div>
+
     </div>
   </div>
-
+<!--------------------------------------------------------CUARTA ZONA-------------------------------------------------->
   <div class="w3-row"style="margin-block-end: 25px;">
     <div class="w3-row-padding w3-center w3-margin-top">
-      <div class="w3-half">
+      <div class="w3-third">
 
-        <div class="w3-card w3-container sombr-ven" style="min-height:250px">
+        <div class="w3-card w3-container sombr-ven" style="min-height:150px">
         <img src="Ims/logos/vento-logo.png" class="vento">
         </div>
       </div>
       
-      <div class="w3-half">
-        <div class="w3-card w3-container sombr-yam" style="min-height:250px">
+      <div class="w3-third">
+        <div class="w3-card w3-container sombr-yam" style="min-height:150px">
         <img src="Ims/logos/Yamaha-Logо.png" class="yamaha">
         </div>
-
       </div>
+
+      <div class="w3-third">
+        <div class="w3-card w3-container sombr-pia" style="min-height:150px">
+        <img src="Ims/logos/logo-Piaggio.png" class="piaggio">
+        </div>
+      </div>
+
     </div>
   </div>
 
 </div>
+<!------------------------------------------------------APARTADO DE INFORMACION DE REPARACION------------------->
 
-
-
-
+  <div class="w3-row-padding mar-ab">
+    <div class="w3-col l8 m6 ltr-blan">
+      <h1 class="w3-xxxlarge"><b>Reparación de Motos</b></h1>
+      <h1 class="w3-xlarge w3-text-green"><b>Tu Máquina, Como Nueva</b></h1>
+      <p class="tam-peq"><span class="w3-large">¿Notas algo diferente en el andar de tu moto? </span>
+        <br>
+        <b>¿Un ruido nuevo, una vibración desconocida, o simplemente sientes que ya no responde como antes? </b>
+        <br>
+         Nosotros entendemos tu preocupacion junto con tus necesidades, 
+         nuestro apartado de reparación está diseñado pensando en ti y en tu moto. 
+         Con herramientas de última generación y técnicos apasionados y certificados, ofrecemos:
+         <ul>
+          <li><b>Diagnóstico Completo:</b> Identificamos el problema hasta en el último detalle, garantizando una solución precisa.</li>
+          <li><b>Reparaciones de Alta Calidad: </b>Desde el motor hasta la transmisión, pasando por el sistema eléctrico y más, no hay desafío que no podamos enfrentar.</li>
+          <li><b>Repuestos Originales y Alternativos: </b> Según tus necesidades y presupuesto, con garantía de compatibilidad y durabilidad.</li>
+         </ul>
+      </p>
+      <button class="button-rep" id="btn-reparar">
+        <a class="quit-lin" onclick="redirigir()">Cotizar reparacion</button></a>
+      
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="Ims/caja-de-herram.png" class="w3-image w3-right w3-hide-small" width="400" height="571">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+      </div>
+    </div>
+  </div>
+<!-----------------------------------------------------ZONA DEL PIE DE PAGINA------------------------------------------->
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+<footer class="w3-center fondo-footer w3-padding-16">
+  <div class="w3-half">
+    <img src="Ims/logo.png" class="img-footer margen-dere">
+  </div>
+  <p class="margen-izq">Siguenos en nuestras redes:</p>
+  <div class="w3-xlarge w3-section margen-izq">
+    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <img src="Ims/" alt="">
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Diseñada por <a href="mailto:zeus_ab@outlook.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Equipo 3</a></p>
+  <ul>
+    <a href="0.1 aviso-de-privacidad.html">Aviso de Privacidad</a>
+    |
+    <a href="0.0 terminos-y-condiciones.html">Terminos y Condiciones</a>
+    |
+    <a href="mailto:rindiemotos@gmail.com">Correo Electronico</a>
+  </ul>
+  <p>© 2024 Rolling Motors | Todos los derechos reservados | Ciencias 67, Escandón I Secc, Miguel Hidalgo, 11800 Ciudad de México, CDMX</p>
+
 </footer>
-
 <script src="js/1.0 pag-prin.js"></script>
-
 </body>
 </html>
