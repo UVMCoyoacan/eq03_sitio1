@@ -153,7 +153,6 @@ body{
   color:#01ff01;
   font-size: 22px;
   font-family:Georgia, 'Times New Roman', Times, serif !important;
-  
 }
 .bienv{
   background: linear-gradient(to top,black,rgb(88, 86, 84),rgb(0, 255, 0),rgb(88, 86, 84),black) !important;
@@ -169,6 +168,8 @@ body{
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-family:'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px rgba(7, 7, 7, 0.418); /* Grosor del contorno y color */
+
 }
 /*/////////////////////////////////////////////   EDICION DE TODA LA PAG    //////////////////////////////////*/
 .fondo{
