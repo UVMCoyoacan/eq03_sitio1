@@ -161,6 +161,9 @@ body{
     min-height:0px;
     background-color:transparent;
   }
+  .cart-blan{
+    background-color: white;
+  }
   /*/////////////////////////////////////////////// LTRA BLANCA ///////////////////////////////*/
   
   .ltr-blan{
@@ -208,5 +211,34 @@ body{
     border-top:solid 3px #0aee0a;
 }
 .tam-mis{
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*********************************carrusel******************************************/
+.mySlides {display:none;}
+/*********************************cartas de colaboradores***********************/
+.pintor{
+  height: 280px;
+  width: 280px;
+}
+.lt-cart-colab{
+  background: -webkit-linear-gradient(white,black,darkblue 70%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.lt-cart-colab-neg{
+  background: -webkit-linear-gradient(white,darkblue 70%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.lt-cart-colab-neg-dob{
+  background: -webkit-linear-gradient(white,darkblue 70%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
 }

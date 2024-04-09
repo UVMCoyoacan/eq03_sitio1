@@ -25,3 +25,8 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+// REDIRIGIR A NUMERO DE WHATS APP
+function redirigir() {
+  // Redirigir a la página deseada
+  window.location.href = 'https://wa.me/5513045263';
+}

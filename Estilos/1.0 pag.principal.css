@@ -168,7 +168,13 @@ body{
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-family:'Times New Roman', Times, serif;
-    -webkit-text-stroke: 1px rgba(7, 7, 7, 0.418); /* Grosor del contorno y color */
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.418); /* Grosor del contorno y color */
+}
+.letra-marcas{
+  background: -webkit-linear-gradient(white,#09ff00de,rgb(43, 42, 42),#09ff00ef,black,white,#09ff00b7,#09ff00b7);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family:'Times New Roman', Times, serif;
 
 }
 /*/////////////////////////////////////////////   EDICION DE TODA LA PAG    //////////////////////////////////*/
