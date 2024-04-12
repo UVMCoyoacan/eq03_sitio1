@@ -1,0 +1,308 @@
+/*/////////////////////////////   cuerpo de la pag   /////////////////////////////////////*/
+body{
+    background-color: black;
+    color: white;
+  }
+  /*/////////////////////////////   imagen del logo      /////////////////////////////////////*/
+  .img-logo{
+      width: 110px !important;
+      height: 50px !important;
+  }
+  .fondo-img{
+    background-color:white;
+  }
+  /*////////////////////////////   Zona del menu       ////////////////////////////////////////////////*/
+  .navbar {
+      overflow: hidden;
+      background: linear-gradient(to right,white,white,grey,grey,black,black,#0aee0a,#0aee0a) !important;
+      top: 0%;
+      height: 57px;
+      width: 100%;
+      
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background: #000000;
+      color: rgb(255, 255, 255) ;
+    }
+  
+    .secc-uno{
+      color: rgb(1, 255, 1) !important;
+    }
+    .secc-dos{
+      background-color: rgb(1, 255, 1); 
+      color: black !important;
+    }
+    .secc-tres{
+      background-color: black; 
+      color: white !important;
+    }
+    /*///////////////////////////////////////    Estilo de letra y tamaño     ////////*/
+    .estil-letr{
+      font-family:sans-serif;
+    }
+    .tam-let{
+      font-size: 15px !important;
+    }
+  /*///////////////////////////////////////    boton whats app ////////*/
+  .button2 {
+    height: 50px;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: black;
+    padding: 0.7em 3.3em 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background:transparent;
+    margin-left: 10px;
+    border: none #e8e8e8;
+    box-shadow: 6px 6px 12px transparent,
+               -6px -6px 12px transparent;
+  }
+  
+  .button2 > svg {
+    height: 30px;
+    position: absolute;
+    padding: 0px 5px;
+    margin-top: -4px;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  /**************************************FOOTERRR*********************************/
+  .img-footer{
+    width: 140px;
+    height: 70px;
+  }
+  .fondo-footer{
+    background-color: rgb(17, 17, 17);
+  }
+  footer{
+    color:  rgba(73, 255, 1, 0.747);
+  }
+  .margen-dere{
+    margin-right: 400px;
+  }
+  .margen-izq{
+    margin-left: 0px;
+  }
+/*******************************************tablas script**********************************************/
+.tam-175{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.tam-450{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.tam-1000{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(21, 255, 0);
+}
+.cont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.ltra-encab{
+    background: -webkit-linear-gradient(white,black,white,rgb(0, 255, 0),rgb(0, 255, 0));
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px rgba(207, 207, 207, 0.425); /* Grosor del contorno y color */
+    font-size: 48px;
+}
+.lin{
+    background-color: #0aee0a;
+    border: none; /* Eliminar el borde por defecto */
+    height: 1px; /* Grosor de la línea */
+}
+/**************************************boton AGENDAR CITA Y COTIZAR************************************/
+.but-ag-cot {
+    background-color: #fff;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 11.9em;
+    height: 2.2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .but-ag-cot p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #25D366;
+  }
+  
+  .but-ag-cot svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .but-ag-cot:hover p {
+    left: 0.5em;
+    color: #fff
+  }
+  
+  .but-ag-cot:hover svg {
+    opacity: 1;
+  }
+  
+  .but-ag-cot:hover {
+    background-color: #25D366;
+  }
+  /************************************boton de cotizar**************************************/
+  .button {
+    text-decoration: none !important;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button span {
+    background: linear-gradient(-45deg, #fffdfd 0%, #33fd00 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .button:hover span {
+    -webkit-text-fill-color: white;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(2);
+    border: 3px solid;
+    border-image: linear-gradient(-45deg, #67ff02 0%, #35fd03 100% );
+    border-image-slice: 1;
+    border-width: 2px 0 2px 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: -1;
+  }
+  
+  .button:hover::before {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  
+  .button::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0aee0a 0%, #497a49 100% );
+    transform: scale(0);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: -1;
+  }
+  
+  .button:hover::after {
+    transform: scaleY(1);
+  }
+  
+  .button:active {
+    scale: 0.90;
+  }
+  .sn-deco{
+    text-decoration: none;
+  }
+  
