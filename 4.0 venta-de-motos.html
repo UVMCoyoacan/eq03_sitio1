@@ -8,12 +8,104 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="Estilos/4.0 ventademotos.css">
 <link href="Ims/logo.png" rel="shortcut icon">
   <!--////////////////////////////////// Mandar a llamr el css ////////////////////////////////-->
 <link rel="stylesheet" href="Estilos/0.0 terminos-y-condiciones.css">
 
 </head>
 <body>
+
+<!-----------CONTENIDP VENTA DE MOTOS--------------------------------------------------------------------------->
+
+<section class="contenido">
+  <div class="mostrador" id="mostrador">
+      <div class="fila">
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/1.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta Vento Lithium 190 cc 2024</p>
+              <span class="precio">$ 24,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/2.png" alt="">
+              </div>
+              <p class="descripcion" id>NIKE RUNNING TERRA </p>
+              <span class="precio">$ 1.800</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/3.png" alt="">
+              </div>
+              <p class="descripcion">NIKE WINFLO 8
+              </p>
+              <span class="precio">$ 3.600</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/4.png" alt="">
+              </div>
+              <p class="descripcion">NIKE LOW-TOP</p>
+              <span class="precio">$ 1.800</span>
+          </div>
+      </div>
+      <div class="fila">
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/5.png" alt="">
+              </div>
+              <p class="descripcion">NIKE BLAZER 97</p>
+              <span class="precio">$ 130</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/6.png" alt="">
+              </div>
+              <p class="descripcion">NIKE LEGEND ESENTIAL</p>
+              <span class="precio">$ 2.000</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/7.png" alt="">
+              </div>
+              <p class="descripcion">NIKE AIR ZOOM</p>
+              <span class="precio">$ 2.500</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="img/8.png" alt="">
+              </div>
+              <p class="descripcion">NIKE TERRA KING</p>
+              <span class="precio">$ 1.800</span>
+          </div>
+      </div> 
+  </div>
+  <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+  <div class="seleccion" id="seleccion">
+      <div class="cerrar" onclick="cerrar()">
+          &#x2715
+      </div>
+      <div class="info">
+          <img src="Ims/ventademotos/1.avif" alt="" id="img">
+          <h2 id="modelo">Motocicleta Vento Lithium 190 cc 2024</h2>
+          <p id="descripcion"> Modelo 1</p>
+          <p> Un diseño de color negro con rojo, con asiento cómodo y amplio, es 
+            lo que te ofrece la motocicleta marca Vento Lithium 2024.<br/>Se define por 
+            su motor de 4 tiempos, enfriado por aire, con potencia máxima de 16 caballos 
+            de fuerza, alcanzando una velocidad máxima de 110 km/h. Se enciende mediante 
+            sistema de ignición CDI electrónica, que te libera de vibraciones al momento 
+            de arrancar.<br/>Cuenta con un tanque de gasolina con capacidad de 10 litros,
+            así como transmisión manual de 5 velocidades. Viene con suspensión delantera 
+            de horquilla hidráulica y doble amortiguador con resorte en la parte trasera. 
+            Vienen con freno delantero de disco y freno trasero de tambor. Además, pesa 108 kg.</p>
+          <span class="precio" id="precio">$ 24,999</span>
+      </div>
+  </div>
+</section>
+
+<script src="js/4.0 ventademotos.js"></script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -98,6 +190,7 @@ style="display:none" id="mySidebar">
   <p>© 2024 Rolling Motors | Todos los derechos reservados | Ciencias 67, Escandón I Secc, Miguel Hidalgo, 11800 Ciudad de México, CDMX</p>
 
 </footer>
+
 <script src="js/0.0 terminos-y-condiciones.js"></script>
 </body>
 </html>
