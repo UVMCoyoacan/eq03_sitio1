@@ -1,12 +1,12 @@
 // DESCARGAR AVISO DE PRIVACIDAD
 function descargarterminosycondiciones() {
     // Redirige al usuario a 'pagina-destino.html'
-    window.location.href = 'Docs/prueba.pdf';
+    window.location.href = 'Docs/Términos y Condiciones.pdf';
   }
 
 function descargarterminosycondiciones() {
     // Abre 'pagina-destino.html' en una nueva pestaña
-    window.open('Docs/prueba.pdf', '_blank');
+    window.open('Docs/Términos y Condiciones.pdf', '_blank');
 }
 
 
