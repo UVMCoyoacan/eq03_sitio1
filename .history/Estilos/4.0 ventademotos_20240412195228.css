@@ -50,7 +50,7 @@
     font-size: 20px;
 }
 .seleccion{
-    transition: .5s ease;
+    transition: .1s ease;
     opacity: 0;
     width: 0%;
     border: 1px solid #ccc;
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
 }
 .cerrar{
     position: absolute;

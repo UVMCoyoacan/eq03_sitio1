@@ -10,6 +10,8 @@
     width: 100%;
     margin: 40px auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .mostrador{
     width: 100%;
@@ -24,21 +26,22 @@
 
 .mostrador .fila .item{
     max-width: 210px;
-    padding: 30px;
-    height: 250px;
+    padding: 20px;
+    height: 3000px;
     /*border: 2px solid red;*/
     text-align: center;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 5px;
     transition: .3s;
+    position: relative;
 }
 .mostrador .fila .item:hover{
     background-color: #e6e6e6;
 }
 .mostrador .fila .item img{
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 .mostrador .fila .item .descripcion{
     color: #707070;
@@ -58,7 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
 }
 .cerrar{
     position: absolute;

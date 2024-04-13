@@ -8,7 +8,7 @@
 .contenido{
     max-width: 1200px;
     width: 100%;
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
 }
 .mostrador{
@@ -23,7 +23,7 @@
 }
 
 .mostrador .fila .item{
-    max-width: 210px;
+    max-width: 250px;
     padding: 30px;
     height: 250px;
     /*border: 2px solid red;*/
@@ -50,7 +50,7 @@
     font-size: 20px;
 }
 .seleccion{
-    transition: .5s ease;
+    transition: .1s ease;
     opacity: 0;
     width: 0%;
     border: 1px solid #ccc;
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
 }
 .cerrar{
     position: absolute;

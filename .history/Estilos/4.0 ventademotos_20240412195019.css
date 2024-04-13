@@ -52,13 +52,13 @@
 .seleccion{
     transition: .5s ease;
     opacity: 0;
-    width: 0%;
-    border: 1px solid #ccc;
+    width: 20%;
+    border: 2px solid #ccc;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
 }
 .cerrar{
     position: absolute;
