@@ -1,12 +1,12 @@
 // DESCARGAR AVISO DE PRIVACIDAD
 function descargaravisodeprivacidad() {
     // Redirige al usuario a 'pagina-destino.html'
-    window.location.href = 'Docs/prueba.pdf';
+    window.location.href = 'Docs/Aviso de Privacidad.pdf';
   }
 
 function descargaravisodeprivacidad() {
     // Abre 'pagina-destino.html' en una nueva pestaña
-    window.open('Docs/prueba.pdf', '_blank');
+    window.open('Docs/Aviso de Privacidad.pdf', '_blank');
 }
 
 
