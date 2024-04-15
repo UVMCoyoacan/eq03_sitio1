@@ -1,0 +1,194 @@
+<section class="contenido">
+  <div class="mostrador" id="mostrador">
+      <div class="fila">
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/1.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta urbana Bajaj Pulsar N250 2024</p>
+              <span class="precio">$ 79,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/2.avif" alt="">
+              </div>
+              <p class="descripcion" id>Motocicleta chopper Carabela Fishbone 250 2024 </p>
+              <span class="precio">$ 69,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/3.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta deportiva Dominar Te 400 2024</p>
+              <span class="precio">$ 98,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/4.avif" alt="">
+              </div>
+              <p class="descripcion">Motoneta Italika WS150 Sport 2024</p>
+              <span class="precio">$ 27,999</span>
+          </div>
+      </div>
+    
+    <br>
+    <br>
+      <div class="fila">
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/5.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta chopper Zontes VX 350 2024</p>
+              <span class="precio">$ 144,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/6.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta deportiva Bajaj Pulsar NS 125 UG 2024</p>
+              <span class="precio">$ 47,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/7.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta urbana Italika 250Z 2024</p>
+              <span class="precio">$ 45,999</span>
+          </div>
+          <div class="item" onclick="cargar(this)">
+              <div class="contenedor-foto">
+                  <img src="Ims/ventademotos/8.avif" alt="">
+              </div>
+              <p class="descripcion">Motocicleta chopper MB Black Devil 250cc 2024</p>
+              <span class="precio">$ 54,399</span>
+          </div>
+      </div> 
+  </div>
+
+  <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+  <div class="seleccion" id="seleccion">
+      <div class="cerrar" onclick="cerrar()">
+          &#x2715
+      </div>
+      <div class="info">
+          <img src="" alt="" id="img">
+          <h2 id="modelo"></h2>
+          <p id="descripcion"></p>
+          <span class="precio" id="precio"></span>
+          <div class="fila">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+.contenido{
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    /*border: 2px solid red;*/
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+    background-color: #e6e6e6;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+}
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+.cerrar{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.info{
+    padding: 20px;
+}
+.info img{
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+}
+.info h2{
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info p{
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info .precio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f85151;
+    margin-bottom: 10px;
+    display: block;
+}
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+.info .fila label{
+    display: block;
+    margin-bottom: 10px;
+}
+.info .fila select{
+    width: 100px;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 30px;
+}
+

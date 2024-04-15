@@ -1,109 +1,410 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-}
-.contenido{
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-}
-.mostrador{
-    width: 100%;
-    transition: .5s ease;
-}
-.mostrador .fila{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.mostrador .fila .item{
-    max-width: 210px;
-    padding: 30px;
-    height: 250px;
-    /*border: 2px solid red;*/
-    text-align: center;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
-}
-.mostrador .fila .item:hover{
-    background-color: #e6e6e6;
-}
-.mostrador .fila .item img{
-    width: 100%;
-    margin: 30px 0;
-}
-.mostrador .fila .item .descripcion{
-    color: #707070;
-    font-weight: bold;
-}
-.mostrador .fila .item .precio{
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
-}
-.seleccion{
-    transition: .5s ease;
-    opacity: 0;
-    width: 0%;
-    border: 1px solid #ccc;
+/*/////////////////////////////   cuerpo de la pag   /////////////////////////////////////*/
+body{
+    background-color: black;
+  }
+  /*/////////////////////////////   imagen del logo      /////////////////////////////////////*/
+  .img-logo{
+      width: 110px !important;
+      height: 50px !important;
+  }
+  .fondo-img{
+    background-color:white;
+  }
+  /*////////////////////////////   Zona del menu       ////////////////////////////////////////////////*/
+  .navbar {
+      overflow: hidden;
+      background: linear-gradient(to right,white,white,grey,grey,black,black,#0aee0a,#0aee0a) !important;
+      top: 0%;
+      height: 57px;
+      width: 100%;
+      
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background: #000000;
+      color: rgb(255, 255, 255) ;
+    }
+  
+    .secc-uno{
+      color: rgb(1, 255, 1) !important;
+    }
+    .secc-dos{
+      background-color: rgb(1, 255, 1); 
+      color: black !important;
+    }
+    .secc-tres{
+      background-color: black; 
+      color: white !important;
+    }
+    /*///////////////////////////////////////    Estilo de letra y tamaño     ////////*/
+    .estil-letr{
+      font-family:sans-serif;
+    }
+    .tam-let{
+      font-size: 15px !important;
+    }
+  /*///////////////////////////////////////    boton whats app ////////*/
+  .button2 {
+    height: 50px;
+    display: inline-block;
+    transition: all 0.2s ease-in;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: auto;
-}
-.cerrar{
-    position: absolute;
-    right: 0;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.info{
-    padding: 20px;
-}
-.info img{
-    display: block;
-    margin: 30px auto;
-    width: 80%;
-}
-.info h2{
-    color: #707070;
-    margin-bottom: 10px;
-}
-.info p{
-    font-size: 14px;
-    color: #707070;
-    margin-bottom: 10px;
-}
-.info .precio{
-    font-size: 30px;
-    font-weight: bold;
-    color: #f85151;
-    margin-bottom: 10px;
-    display: block;
-}
-.info .fila{
-    display: flex;
-    align-items: flex-end;
-}
-.info .fila label{
-    display: block;
-    margin-bottom: 10px;
-}
-.info .fila select{
-    width: 100px;
+    overflow: hidden;
+    z-index: 1;
+    color: black;
+    padding: 0.7em 3.3em 0.7em 1.7em;
     font-size: 18px;
-    padding: 6px;
-    margin-right: 30px;
+    border-radius: 0.5em;
+    background:transparent;
+    margin-left: 10px;
+    border: none #e8e8e8;
+    box-shadow: 6px 6px 12px transparent,
+               -6px -6px 12px transparent;
+  }
+  
+  .button2 > svg {
+    height: 30px;
+    position: absolute;
+    padding: 0px 5px;
+    margin-top: -4px;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  /*/////////////////////////////////////////   Edicion de servicios        ///////////////////////////////////////////*/
+  .carta{
+    
+    box-shadow: 6px 6px 25px #09ff00de;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: auto;
+    margin-right: 10px;
+  }
+  
+  /*/////////////////////////////////////////   Edicion de cartas        ///////////////////////////////////////////*/
+  .trab{
+    font-size: 45px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .fond{
+    background-color: white;
+  }
+ 
+  /*////////////////////////////////////////////////BOTON DE REPARAR/////////////////////////////*/
+  .button-rep {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+  .quit-lin{
+    text-decoration: none !important;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .button-rep:hover {
+    color: #ffffff;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  .button-rep:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  .button-rep:hover:before {
+    transform: translateX(15em);
+  }
+/*********************************************ZONA DEL FOOTER*********************************************/
+  .img-footer{
+    width: 140px;
+    height: 70px;
+  }
+  .fondo-footer{
+    background-color: rgb(17, 17, 17);
+  }
+  footer{
+    color:  rgba(73, 255, 1, 0.747);
+  }
+  .margen-dere{
+    margin-right: 400px;
+  }
+  .banner{
+    width: auto;
+    height: 200px;
+  }
+  body{
+    color: white;
+  }
+  
+/**************************************BOTON DE DESCARGAR******************************************/
+.botao {
+  width: 125px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px rgba(116, 214, 3, 0.37);
+  padding: 5px 10px;
+  background: rgb(105, 231, 2);
+  background: linear-gradient(160deg, rgb(124, 126, 123) 0%, rgb(128, 128, 128) 5%, rgb(128, 128, 128) 19%, rgb(78, 241, 2) 57%, rgb(2, 2, 2) 71%);
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 505;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px rgba(112, 243, 4, 0.568));
+  transition: .5s linear;
 }
 
+.botao .mysvg {
+  display: none;
+}
+
+.botao:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .5s linear;
+}
+
+.botao:hover .texto {
+  display: none;
+}
+
+.botao:hover .mysvg {
+  display: inline;
+}
+
+.botao:hover::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3.5px solid transparent;
+  border-top: 3.5px solid gold;
+  border-right: 3.5px solid gold;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/************************************VENTA DE MOTOS*****************************************************/
+.adj-img{
+    width: auto;
+    height: 150px;
+    text-align: center;
+    
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 235%; /* Cambia el valor para que el modal ocupe toda la pantalla */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el valor para ajustar la opacidad del fondo */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Cambia el valor para ajustar el ancho del contenido dentro del modal */
+    max-width: 800px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+    max-height: 100%; /* Cambia el valor para ajustar la altura máxima del contenido dentro del modal */
+    overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido es demasiado largo */
+  }
+  
+  .adj-imgs{
+    width: auto;
+    height: 150px;
+    text-align: center;
+    
+}
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-caption {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.img-grn{
+    height: 400px;
+    width: auto;
+}  
+
+/* Estilos para el contenedor del carrusel */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Estilos para las imágenes dentro del carrusel */
+  .mySlides {
+    display: none;
+    max-width: 100%;
+  }
+  
+  /* Estilos para los botones "Anterior" y "Siguiente" del carrusel */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Estilos para el botón "Anterior" */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Estilos para el botón "Siguiente" */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Estilos para los indicadores del carrusel */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Estilo para el indicador activo */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+   /***********************************************LTRA DE BIENVENIDA***************************************/
+   .bienv{
+    background: linear-gradient(to top,black,rgb(88, 86, 84),rgb(0, 255, 0),rgb(88, 86, 84),black) !important;
+    text-align: center;
+    border: solid 3px rgba(255, 255, 255, 0.705);
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    border-top:solid 3px #0aee0a;
+    margin-top: 65px;
+  }
+  .letra-bienv {
+    background: -webkit-linear-gradient(white, black, white, rgb(26, 92, 26), white, black, white, rgb(26, 92, 26));
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.425); /* Grosor del contorno y color */
+
+}

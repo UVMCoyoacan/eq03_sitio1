@@ -8,104 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="Estilos/4.0 ventademotos.css">
 <link href="Ims/logo.png" rel="shortcut icon">
   <!--////////////////////////////////// Mandar a llamr el css ////////////////////////////////-->
-<link rel="stylesheet" href="Estilos/0.0 terminos-y-condiciones.css">
-
-
+<link rel="stylesheet" href="Estilos/4.0 ventademotos.css">
 </head>
-
-
 <body>
-<!-----------CONTENIDO VENTA DE MOTOS--------------------------------------------------------------------------->
-
-<section class="contenido">
-  <div class="mostrador" id="mostrador">
-      <div class="fila">
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/1.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta urbana Bajaj Pulsar N250 2024</p>
-              <span class="precio">$ 79,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/2.avif" alt="">
-              </div>
-              <p class="descripcion" id>Motocicleta chopper Carabela Fishbone 250 2024 </p>
-              <span class="precio">$ 69,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/3.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta deportiva Dominar Te 400 2024</p>
-              <span class="precio">$ 98,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/4.avif" alt="">
-              </div>
-              <p class="descripcion">Motoneta Italika WS150 Sport 2024</p>
-              <span class="precio">$ 27,999</span>
-          </div>
-      </div>
-    
-    <br>
-    <br>
-      <div class="fila">
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/5.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta chopper Zontes VX 350 2024</p>
-              <span class="precio">$ 144,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/6.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta deportiva Bajaj Pulsar NS 125 UG 2024</p>
-              <span class="precio">$ 47,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/7.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta urbana Italika 250Z 2024</p>
-              <span class="precio">$ 45,999</span>
-          </div>
-          <div class="item" onclick="cargar(this)">
-              <div class="contenedor-foto">
-                  <img src="Ims/ventademotos/8.avif" alt="">
-              </div>
-              <p class="descripcion">Motocicleta chopper MB Black Devil 250cc 2024</p>
-              <span class="precio">$ 54,399</span>
-          </div>
-      </div> 
-  </div>
-
-  <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
-  <div class="seleccion" id="seleccion">
-      <div class="cerrar" onclick="cerrar()">
-          &#x2715
-      </div>
-      <div class="info">
-          <img src="" alt="" id="img">
-          <h2 id="modelo"></h2>
-          <p id="descripcion"></p>
-          <span class="precio" id="precio"></span>
-          <div class="fila">
-          </div>
-      </div>
-  </div>
-</section>
-
-<br>
-<br>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card navbar estil-letr" id="myNavbar">
@@ -160,7 +67,508 @@ style="display:none" id="mySidebar">
   <a href="5.0 contacto.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
 </nav>
 <!--////////////////////////////////// INFO DE LA PAG ////////////////////////////////-->
-<br><br><br>
+            <center>
+              <div class="w3-row bienv" >
+                <h1 class="letra-bienv">VENTA DE MOTOS
+                </h1>
+            </center>
+            
+            </div>
+            <br><br>
+            <div class="w3-row ">
+              <div class="w3-col l3 s6 w3-card">
+                <center>
+                  <div class="w3-container carta">
+                    <img src="Ims/ventademotos/1.avif" alt="Ripped Skinny Jeans" onclick="openModal('modal1', this.src)" class="adj-img" style="cursor:pointer">
+                    <p>Ducati hypermotard 821cc<br><b>$135,000.00 MxM</b></p>
+                  </div>
+                </center>
+                <div id="modal1" class="modal">
+                  <span onclick="closeModal('modal1')" class="close">&times;</span>
+                  <img class="modal-content img-grn" src="Ims/ventademotos/2.avif" >
+                  <div class="modal-caption">
+                    <h3>Ducati hypermotard 821cc</h3>
+                    <p>Precio: $135,000.00 MXM</p>
+                    <p><strong>Marca:</strong> Ducati</p>
+                    <p><strong>Tipo de carnet:</strong> A-2</p>
+                    <p><strong>Año:</strong> 2013</p>
+                    <p><strong>Plazas:</strong> 2</p>
+                    <h2>Motor y transmisión</h2>
+                    <p><strong>Cilindrada exacta:</strong> 821 cc</p>
+                    <p><strong>Tipo:</strong> 4 T</p>
+                    <p><strong>Disposición:</strong> En L</p>
+                    <p><strong>Distribución:</strong> Desmodrómica</p>
+                    <p><strong>Cilindros:</strong> 2</p>
+                    <p><strong>Válvulas por cilindro:</strong> 4</p>
+                    <p><strong>Alimentación:</strong> Inyección electrónica Magneti Marelli con cuerpos de 52 mm, ride by wire</p>
+                    <p><strong>Refrigeración:</strong> Líquida</p>
+                    <p><strong>Diámetro por carrera:</strong> 88 mm x 67.5 mm</p>
+                    <p><strong>Compresión:</strong> 12.8 :1</p>
+                    <p><strong>Potencia máxima declarada:</strong> 110 CV a 9.250 rpm</p>
+                    <p><strong>Par máximo declarado:</strong> 89.2 Nm</p>
+                    <p><strong>Combustible:</strong> Gasolina sin plomo 95/98</p>
+                    <p><strong>Normativa anticontaminación:</strong> Euro3</p>
+                    <p><strong>Limitación:</strong> No</p>
+                    <p><strong>Encendido:</strong> Electrónico CDI</p>
+                    <p><strong>Transmisión primaria:</strong> Engranajes de dientes rectos</p>
+                    <p><strong>Transmisión secundaria:</strong> Cadena</p>
+                    <p><strong>Embrague:</strong> Multidisco en baño de aceite, anti-rebote</p>
+                    <p><strong>Accionamiento:</strong> Hidráulico</p>
+                    <p><strong>Número de marchas:</strong> 6</p>
+                    <p><strong>Relación primaria:</strong> 1,85 : 1</p>
+                    <p><strong>Relación 1:</strong> 37/15</p>
+                    <p><strong>Relación 2:</strong> 30/17</p>
+                    <p><strong>Relación 3:</strong> 28/20</p>
+                    <p><strong>Relación 4:</strong> 26/22</p>
+                    <p><strong>Relación 5:</strong> 24/23</p>
+                    <p><strong>Relación 6:</strong> 23/24</p>
+                    <h2>Chasis</h2>
+                    <p><strong>Tipo de chasis:</strong> Multitubular de acero tipo Trellis</p>
+                    <h3>Suspensión delantera</h3>
+                    <p><strong>Tipo de suspensión delantera:</strong> Horquilla invertida</p>
+                    <p><strong>Modelo:</strong> Kayaba</p>
+                    <p><strong>Diámetro de barras:</strong> 43 mm</p>
+                    <p><strong>Recorrido:</strong> 170 mm</p>
+                    <h3>Suspensión trasera</h3>
+                    <p><strong>Tipo basculante:</strong> Monobrazo</p>
+                    <p><strong>Material:</strong> Aluminio</p>
+                    <p><strong>Tipo de suspensión trasera:</strong> 1 amortiguador</p>
+                    <p><strong>Recorrido:</strong> 150 mm</p>
+                    <p><strong>Regulaciones:</strong> Precarga, extensión y compresión</p>
+                    <h2>Freno delantero</h2>
+                    <p><strong>Modelo:</strong> Brembo</p>
+                    <p><strong>Sistema:</strong> 2 discos semiflotantes, ABS</p>
+                    <p><strong>Diámetro:</strong> 320 mm</p>
+                    <p><strong>Pinza:</strong> Anclaje radial monobloque, 4 pistones</p>
+                    <p><strong>Bomba:</strong> Radial</p>
+                    <p><strong>Marca de la bomba:</strong> Brembo</p>
+                    <h2>Freno trasero</h2>
+                    <p><strong>Modelo:</strong> Brembo</p>
+                    <p><strong>Sistema:</strong> Disco</p>
+                    <p><strong>Diámetro:</strong> 245 mm</p>
+                    <p><strong>Pinza:</strong> 2 pistones, ABS</p>
+                    <h2>Rueda delantera</h2>
+                    <p><strong>Diámetro de llanta:</strong> 17 "</p>
+                    <p><strong>Garganta de llanta:</strong> 3.5</p>
+                    <p><strong>Material de llanta:</strong> Aleación ligera</p>
+                    <p><strong>Marca de neumáticos:</strong> Pirelli</p>
+                    <p><strong>Modelo de neumáticos:</strong> Diablo Rosso II</p>
+                    <p><strong>Tipo de neumáticos:</strong> Radial Tubeless</p>
+                    <p><strong>Medida de neumáticos:</strong> 120/70 ZR-17</p>
+                    <h2>Rueda trasera</h2>
+                    <p><strong>Diámetro de llanta:</strong> 17 "</p>
+                    <p><strong>Garganta de llanta:</strong> 5.5</p>
+                    <p><strong>Material de llanta:</strong> Aleación ligera</p>
+                    <p><strong>Marca de neumáticos:</strong> Pirelli</p>
+                    <p><strong>Modelo de neumáticos:</strong> Diablo Rosso II</p>
+                    <p><strong>Tipo de neumáticos:</strong> Radial Tubeless</p>
+                    <p><strong>Medida de neumáticos:</strong> 180/55 ZR-17</p>
+                    <h2>Dimensiones y peso</h2>
+                    <p><strong>Longitud máxima:</strong> 2.100 mm</p>
+                    <p><strong>Anchura máxima:</strong> 860 mm</p>
+                    <p><strong>Altura máxima:</strong> 1.150 mm</p>
+                    <p><strong>Distancia entre ejes:</strong> 1.500 mm</p>
+                    <p><strong>Altura de asiento:</strong> 870 mm</p>
+                    <p><strong>Avance:</strong> 104 mm</p>
+                    <p><strong>Ángulo de dirección:</strong> 70 º</p>
+                    <p><strong>Ángulo de lanzamiento:</strong> 25.5 º</p>
+                    <p><strong>Capacidad del depósito:</strong> 16 l.</p>
+                    <p><strong>Peso en seco:</strong> 175 Kg</p>
+                    <h2>Equipamiento</h2>
+                    <h3>Confort</h3>
+                    <p>Guantera</p>
+                    <p>Inmovilizador eléctrico</p>
+                    <p>Arranque eléctrico</p>
+                    <p>Warning</p>
+                    <p>Toma de corriente</p>
+                    <p>Regulación de maneta de freno</p>
+                    <p>Regulación de maneta de embrague</p>
+                    <p>Amortiguador de dirección</p>
+                    <p>Caballete central</p>
+                    <p>Pata de cabra</p>
+                    <p>Maletas</p>
+                    <h3>Instrumentación</h3>
+                    <p>Cuentarrevoluciones</p>
+                    <p>Cronómetro</p>
+                    <p>Reloj</p>
+                    <p>Nivel de gasolina</p>
+                    <p>Temperatura de refrigerante</p>
+                    <p>Temperatura ambiente</p>
+                    <p>Luz sobre régimen</p>
+                    <p>Indicador de marcha engranada</p>
+                    <p>Testigo de reserva</p>
+                    <p>Recordatorio de revisiones</p>
+                    <h3>Electrónica</h3>
+                    <p>ABS</p>
+                    <h2>Mantenimiento</h2>
+                    <p><strong>Rodaje km:</strong> 2.500</p>
+                    <p><strong>Intervalo de aceite de motor:</strong> Primero 1.000 km. Posteriormente cada 12.000 km</p>
+                    <p><strong>Intervalo del filtro de aceite:</strong> Primero 1.000 km. Posteriormente cada 12.000 km</p>
+                    <p><strong>Intervalo del filtro de aire:</strong> 30.000 km</p>
+                    <p><strong>Aceite de motor recomendado:</strong> SHELL - Advance Ultra 4</p>
+                    <p><strong>Capacidad del cárter:</strong> 3 l.</p>
+                    <p><strong>Aceite de horquilla recomendado:</strong> SHELL - Advance Fork 7.5 o Donax TA</p>
+                    <p><strong>P. recomendada del neumático delantero:</strong> 2,200 bar</p>
+                    <p><strong>P. recomendada del neumático trasero:</strong> 2,200 bar</p>
+                    <button>Contactar</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="w3-col l3 s6">
+                <center>  
+                  <div class="w3-container carta">
+                    <img src="Ims/ventademotos/3.avif" alt="Mega Ripped Jeans" onclick="openModal('modal2', this.src)" class="adj-img" style="cursor:pointer">
+                    <p>MT 09 900cc<br><b>$140,000.00 MxM</b></p>
+                  </div>
+                </center>
+                <div id="modal2" class="modal">
+                  <span onclick="closeModal('modal2')" class="close">&times;</span>
+                  <img class="modal-content img-grn" src="Ims/ventademotos/4.avif">
+                  <div class="modal-caption">
+                    <h3>MT 09 900cc</h3>
+                    <p>$140,000.00 MxM</p>
+                    <h2>Datos comerciales Yamaha MT-09 2022</h2>
+                    <p><strong>Marca:</strong> Yamaha</p>
+                    <p><strong>Año:</strong> 2022</p>
+                    <p><strong>Plazas:</strong> 2</p>
+                    <p><strong>Garantía:</strong> 2 años</p>
+                    <h2>Motor y transmisión</h2>
+                    <p><strong>Cilindrada exacta:</strong> 890 cc</p>
+                    <p><strong>Ciclo:</strong> 4 T</p>
+                    <p><strong>Disposición:</strong> En línea</p>
+                    <p><strong>Distribución:</strong> DOHC</p>
+                    <p><strong>Cilindros:</strong> 3</p>
+                    <p><strong>Válvulas por cilindro:</strong> 4</p>
+                    <p><strong>Alimentación:</strong> Inyección electrónica</p>
+                    <p><strong>Refrigeración:</strong> Agua</p>
+                    <p><strong>Diámetro por carrera:</strong> 78 mm x 62.1 mm</p>
+                    <p><strong>Compresión:</strong> 11.5 :1</p>
+                    <p><strong>Potencia:</strong> 119 CV a 10.000 rpm</p>
+                    <p><strong>Torque:</strong> 93 Nm a 7.000 rpm</p>
+                    <p><strong>Combustible:</strong> Gasolina sin plomo 95/98</p>
+                    <p><strong>Normativa anticontaminación:</strong> Euro5</p>
+                    <p><strong>Limitación:</strong> No</p>
+                    <p><strong>Encendido:</strong> TCI</p>
+                    <p><strong>Transmisión secundaria:</strong> Cadena</p>
+                    <p><strong>Embrague:</strong> Multidisco en baño de aceite</p>
+                    <p><strong>Accionamiento:</strong> Mecánico; por cable</p>
+                    <p><strong>Número de velocidades:</strong> 6</p>
+                    <p><strong>Relación primaria:</strong> 1.681 (65/43)</p>
+                    <p><strong>Relación final:</strong> 2.813 (45/16)</p>
+                    <p><strong>Relación 1:</strong> 2.667 (40/15)</p>
+                    <p><strong>Relación 2:</strong> 2.000 (38/19)</p>
+                    <p><strong>Relación 3:</strong> 1.619 (34/21)</p>
+                    <p><strong>Relación 4:</strong> 1.381 (29/21)</p>
+                    <p><strong>Relación 5:</strong> 1.190 (25/21)</p>
+                    <p><strong>Relación 6:</strong> 1.037 (28/27)</p>
+                    <h2>Chasis</h2>
+                    <p><strong>Tipo de chasis:</strong> Diamante</p>
+                    <h3>Suspensión delantera</h3>
+                    <p><strong>Tipo de suspensión delantera:</strong> Horquilla invertida</p>
+                    <p><strong>Diámetro de barras:</strong> 41 mm</p>
+                    <p><strong>Recorrido:</strong> 130 mm</p>
+                    <p><strong>Regulaciones:</strong> Multirregulable</p>
+                    <h3>Suspensión trasera</h3>
+                    <p><strong>Tipo basculante:</strong> Doble brazo</p>
+                    <p><strong>Material:</strong> Aluminio</p>
+                    <p><strong>Tipo de suspensión trasera:</strong> 1 amortiguador</p>
+                    <p><strong>Recorrido:</strong> 122 mm</p>
+                    <p><strong>Regulaciones:</strong> Rebote y precarga</p>
+                    <h2>Freno delantero</h2>
+                    <p><strong>ABS:</strong> -1</p>
+                    <p><strong>Sistema:</strong> 2 discos</p>
+                    <p><strong>Diámetro:</strong> 298 mm</p>
+                    <p><strong>Pinza:</strong> Radial de 4 pistones</p>
+                    <h2>Freno trasero</h2>
+                    <p><strong>Sistema:</strong> Disco</p>
+                    <p><strong>Diámetro:</strong> 245 mm</p>
+                    <p><strong>Pinza:</strong> 2 pistones</p>
+                    <h2>Rueda delantera</h2>
+                    <p><strong>Diámetro rin delantero:</strong> 17 "</p>
+                    <p><strong>Material rin delantero:</strong> Aluminio</p>
+                    <p><strong>Marca llanta delantera:</strong> Bridgestone</p>
+                    <p><strong>Modelo de neumáticos:</strong> Battlax BT021</p>
+                    <p><strong>Tipo de neumáticos:</strong> Radial Tubeless</p>
+                    <p><strong>Medida llanta delantera:</strong> 120/70-ZR17 (58W)</p>
+                    <h2>Rueda trasera</h2>
+                    <p><strong>Diámetro rin trasero:</strong> 17 "</p>
+                    <p><strong>Material rin trasero:</strong> Aluminio</p>
+                    <p><strong>Marca llanta trasera:</strong> Bridgestone</p>
+                    <p><strong>Modelo de neumáticos:</strong> Battlax BT021</p>
+                    <p><strong>Tipo de neumáticos:</strong> Radial Tubeless</p>
+                    <p><strong>Medida llanta trasera:</strong> 180/55-ZR17 (73W)</p>
+                    <h2>Dimensiones y prestaciones</h2>
+                    <p><strong>Longitud máxima:</strong> 2,090 mm</p>
+                    <p><strong>Anchura máxima:</strong> 795 mm</p>
+                    <p><strong>Altura máxima:</strong> 1,190 mm</p>
+                    <p><strong>Distancia entre ejes:</strong> 1,430 mm</p>
+                    <p><strong>Altura de asiento:</strong> 825 mm</p>
+                    <p><strong>Avance:</strong> 108 mm</p>
+                    <p><strong>Ángulo de lanzamiento:</strong> 25 º</p>
+                    <p><strong>Capacidad del depósito:</strong> 14 l.</p>
+                    <p><strong>Peso en orden de marcha:</strong> 189 Kg</p>
+                    <h2>Consumo y prestaciones</h2>
+                    <p><strong>Consumo:</strong> 5 L/100km</p>
+                    <h2>Equipamiento</h2>
+                    <h3>Confort</h3>
+                    <p>Inmovilizador eléctrico</p>
+                    <p>Arranque eléctrico</p>
+                    <p>Warning</p>
+                    <p>Puños calefactables (Opcional)</p>
+                    <p>Pantallas distinta altura (Opcional)</p>
+                    <p>Pata de cabra</p>
+                    <p>Maletas (Opcional)</p>
+                    <p>Baúl trasero (Opcional)</p>
+                    <h3>Instrumentación</h3>
+                    <p>TFT</p>
+                    <p>Cuentarrevoluciones</p>
+                    <p>Reloj</p>
+                    <p>Ordenador de a bordo</p>
+                    <p>Nivel de gasolina</p>
+                    <p>Temperatura de refrigerante</p>
+                    <p>Temperatura ambiente</p>
+                    <p>Luz sobre régimen</p>
+                    <p>Indicador de marcha engranada</p>
+                    <p>Testigo de reserva</p>
+                    <p>Recordatorio de revisiones</p>
+                    <h3>Conectividad smartphones</h3>
+                    <p>Aplicación smartphones</p>
+                    <h3>Electrónica</h3>
+                    <p>IMU</p>
+                    <p>Acelerador electrónico</p>
+                    <p>Control de tracción</p>
+                    <p>Control de tracción en curva</p>
+                    <p>ABS en curva</p>
+                    <p>Modos de motor</p>
+                    <p>Selector intervención control tracción</p>
+                    <p>Antiwheelie</p>
+                    <p>Quickshift</p>
+                    <p>Embrague antirrebote</p>
+                    <p>Iluminación full-LED</p>
+                    <h2>Mantenimiento</h2>
+                    <p><strong>Rodaje km:</strong> 1,600</p>
+                    <p><strong>Intervalo de aceite de motor:</strong> Primero 1,000 km. Posteriormente cada 10,000 km</p>
+                    <p><strong>Intervalo del filtro de aceite:</strong> Primero 1,000 km. Posteriormente cada 20,000 km</p>
+                    <p><strong>Intervalo del filtro de aire:</strong> 40,000 km</p>
+                    <p><strong>Aceite de motor recomendado:</strong> YAMALUBE Tipo: SAE 10W-40, 10W-50, 15W-40, 20W-40 o 20W-50</p>
+                    <p><strong>Capacidad del cárter:</strong> 3 l.</p>
+                    <p><strong>P. recomendada del neumático delantero:</strong> 2.500 bar</p>
+                    <p><strong>P. recomendada del neumático trasero:</strong> 2.900 bar</p>
+                    <button>Contactar</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="w3-col l3 s6">
+                <center>
+                <div class="w3-container carta">
+                  <img src="Ims/ventademotos/5.avif" alt="Skinny Jeans" onclick="openModal('modal3', this.src)" class="adj-imgs" style="cursor:pointer">
+                  <p>Ninja Kawasaki 400<br><b>$140,000.00 MxM</b></p>
+                </div>
+                </center>
+                <div id="modal3" class="modal">
+                  <span onclick="closeModal('modal3')" class="close">&times;</span>
+                  <img class="modal-content img-grn" src="Ims/ventademotos/6.avif">
+                  <div class="modal-caption">
+                    <h3>Ninja Kawasaki 400</h3>
+                    <p>$140,000.00 MxM</p>
+                    <h2>Datos comerciales Kawasaki Ninja 400 ABS 2023</h2>
+                    <p><strong>Marca:</strong> Kawasaki</p>
+                    <p><strong>Año:</strong> 2023</p>
+                    <p><strong>Plazas:</strong> 2</p>
+                    <h2>Motor y transmisión</h2>
+                    <p><strong>Cilindrada exacta:</strong> 399 cc</p>
+                    <p><strong>Ciclo:</strong> 4 T</p>
+                    <p><strong>Disposición:</strong> En línea</p>
+                    <p><strong>Distribución:</strong> DOHC</p>
+                    <p><strong>Cilindros:</strong> 2</p>
+                    <p><strong>Válvulas por cilindro:</strong> 4</p>
+                    <p><strong>Refrigeración:</strong> Agua</p>
+                    <p><strong>Diámetro por carrera:</strong> 70 mm x 51.8 mm</p>
+                    <p><strong>Compresión:</strong> 11 :1</p>
+                    <p><strong>Potencia:</strong> 45 CV a 10.000 rpm</p>
+                    <p><strong>Torque:</strong> 38 Nm a 8.000 rpm</p>
+                    <p><strong>Combustible:</strong> Gasolina sin plomo 95/98</p>
+                    <p><strong>Normativa anticontaminación:</strong> Euro5</p>
+                    <p><strong>Encendido:</strong> Digital</p>
+                    <p><strong>Transmisión secundaria:</strong> Cadena sellada</p>
+                    <p><strong>Embrague:</strong> Multidisco en baño de aceite con sistema antirrebote</p>
+                    <p><strong>Accionamiento:</strong> Mecánico; por cable</p>
+                    <p><strong>Número de velocidades:</strong> 6</p>
+                    <p><strong>Relación primaria:</strong> 2.219 (71/32)</p>
+                    <p><strong>Relación final:</strong> 2.929 (41/14)</p>
+                    <p><strong>Relación 1:</strong> 2.929 (41/14)</p>
+                    <p><strong>Relación 2:</strong> 2.056 (37/18)</p>
+                    <p><strong>Relación 3:</strong> 1.619 (34/21)</p>
+                    <p><strong>Relación 4:</strong> 1.333 (32/24)</p>
+                    <p><strong>Relación 5:</strong> 1.154 (30/26)</p>
+                    <p><strong>Relación 6:</strong> 1.037 (28/27)</p>
+                    <h2>Chasis</h2>
+                    <p><strong>Tipo de chasis:</strong> Tubular de acero</p>
+                    <h3>Suspensión delantera</h3>
+                    <p><strong>Tipo de suspensión delantera:</strong> Horquilla telescópica</p>
+                    <p><strong>Diámetro de barras:</strong> 41 mm</p>
+                    <h3>Suspensión trasera</h3>
+                    <p><strong>Tipo basculante:</strong> Doble brazo</p>
+                    <p><strong>Tipo de suspensión trasera:</strong> 1 amortiguador con carga de gas</p>
+                    <p><strong>Regulaciones:</strong> Precarga de muelle</p>
+                    <h2>Freno delantero</h2>
+                    <p><strong>ABS:</strong> -1</p>
+                    <p><strong>Sistema:</strong> 1 disco lobulado semi flotante</p>
+                    <p><strong>Diámetro:</strong> 310 mm</p>
+                    <p><strong>Pinza:</strong> 4 pistones con ABS</p>
+                    <h2>Freno trasero</h2>
+                    <p><strong>Sistema:</strong> Disco lobulado</p>
+                    <p><strong>Diámetro:</strong> 220 mm</p>
+                    <p><strong>Pinza:</strong> 2 pistones</p>
+                    <h2>Rueda delantera</h2>
+                    <p><strong>Diámetro rin delantero:</strong> 17 "</p>
+                    <p><strong>Marca llanta delantera:</strong> Dunlop</p>
+                    <p><strong>Modelo de neumáticos:</strong> Sportmax</p>
+                    <p><strong>Medida llanta delantera:</strong> 110/70-R17 M/C (54H)</p>
+                    <h2>Rueda trasera</h2>
+                    <p><strong>Diámetro rin trasero:</strong> 17 "</p>
+                    <p><strong>Marca llanta trasera:</strong> Dunlop</p>
+                    <p><strong>Modelo de neumáticos:</strong> Sportmax</p>
+                    <p><strong>Medida llanta trasera:</strong> 150/60-R17 M/C (66H)</p>
+                    <h2>Dimensiones y prestaciones</h2>
+                    <p><strong>Longitud máxima:</strong> 1,990 mm</p>
+                    <p><strong>Anchura máxima:</strong> 710 mm</p>
+                    <p><strong>Altura máxima:</strong> 1,120 mm</p>
+                    <p><strong>Distancia entre ejes:</strong> 1,370 mm</p>
+                    <p><strong>Altura de asiento:</strong> 785 mm</p>
+                    <p><strong>Avance:</strong> 92 mm</p>
+                    <p><strong>Ángulo de dirección:</strong> 35 º</p>
+                    <p><strong>Ángulo de lanzamiento:</strong> 27 º</p>
+                    <p><strong>Capacidad del depósito:</strong> 14 l.</p>
+                    <p><strong>Peso en orden de marcha:</strong> 168 Kg</p>
+                    <h2>Equipamiento</h2>
+                    <h3>Confort</h3>
+                    <p>Hueco bajo el asiento</p>
+                    <p>Arranque eléctrico</p>
+                    <p>Toma de corriente</p>
+                    <p>Pata de cabra</p>
+                    <h3>Instrumentación</h3>
+                    <p>Cuentarrevoluciones</p>
+                    <p>Reloj</p>
+                    <p>Ordenador de a bordo</p>
+                    <p>Nivel de gasolina</p>
+                    <p>Temperatura de refrigerante</p>
+                    <p>Luz sobre régimen</p>
+                    <p>Indicador de marcha engranada</p>
+                    <p>Testigo de reserva</p>
+                    <button>Contactar</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="w3-col l3 s6">
+                <center>
+                  <div class="w3-container carta">
+                    <img src="Ims/ventademotos/7.avif" alt="Distressed Jeans" onclick="openModal('modal4', this.src)" class="adj-img" style="cursor:pointer">
+                    <p>Triumph Thunderbird 900cc Super Sport<br><b>$100,000.00 MxM</b></p>
+                  </div>
+                </center>
+                <div id="modal4" class="modal">
+                  <span onclick="closeModal('modal4')" class="close">&times;</span>
+                  <img class="modal-content" src="Ims/ventademotos/8.avif">
+                  <div class="modal-caption">
+                    <h3>Triumph Thunderbird 900cc Super Sport</h3>
+                    <p>Precio: $34.99</p>
+                    <h2>Datos comerciales Triumph Thunderbird ABS 2010</h2>
+                    <p><strong>Marca:</strong> Triumph</p>
+                    <p><strong>Tipo de carnet:</strong> A</p>
+                    <p><strong>Año:</strong> 2010</p>
+                    <p><strong>Plazas:</strong> 2</p>
+                    <h2>Motor y transmisión</h2>
+                    <p><strong>Cilindrada exacta:</strong> 1.597 cc</p>
+                    <p><strong>Tipo:</strong> 4 T</p>
+                    <p><strong>Disposición:</strong> En línea</p>
+                    <p><strong>Distribución:</strong> DOHC</p>
+                    <p><strong>Cilindros:</strong> 2</p>
+                    <p><strong>Alimentación:</strong> Inyección secuencial electrónica multipunto con accionamiento progresivo de las mariposas</p>
+                    <p><strong>Refrigeración:</strong> Agua</p>
+                    <p><strong>Diámetro por carrera:</strong> 103.8 mm x 94.3 mm</p>
+                    <p><strong>Compresión:</strong> 9.7 :1</p>
+                    <p><strong>Potencia máxima declarada:</strong> 86 CV a 4.850 rpm</p>
+                    <p><strong>Par máximo declarado:</strong> 146 Nm a 2.750 rpm</p>
+                    <p><strong>Combustible:</strong> Gasolina sin plomo 95/98</p>
+                    <p><strong>Normativa anticontaminación:</strong> Euro3</p>
+                    <p><strong>Transmisión secundaria:</strong> Correa</p>
+                    <p><strong>Embrague:</strong> Multidisco en aceite</p>
+                    <p><strong>Número de marchas:</strong> 6</p>
+                    <h2>Chasis</h2>
+                    <p><strong>Tipo de chasis:</strong> Doble viga de acero</p>
+                    <h3>Suspensión delantera</h3>
+                    <p><strong>Tipo de suspensión delantera:</strong> Horquilla telescópica</p>
+                    <p><strong>Modelo:</strong> Showa</p>
+                    <p><strong>Diámetro de barras:</strong> 47 mm</p>
+                    <p><strong>Recorrido:</strong> 120 mm</p>
+                    <h3>Suspensión trasera</h3>
+                    <p><strong>Tipo basculante:</strong> Doble brazo</p>
+                    <p><strong>Material:</strong> Acero</p>
+                    <p><strong>Tipo de suspensión trasera:</strong> 2 amortiguadores</p>
+                    <p><strong>Recorrido:</strong> 95 mm</p>
+                    <p><strong>Regulaciones:</strong> Precarga en 5 posiciones</p>
+                    <h2>Freno delantero</h2>
+                    <p><strong>Sistema:</strong> 1 disco</p>
+                    <p><strong>Diámetro:</strong> 310 mm</p>
+                    <p><strong>Pinza:</strong> Nissin de 4 pistones ABS</p>
+                    <h2>Freno trasero</h2>
+                    <p><strong>Sistema:</strong> Disco</p>
+                    <p><strong>Diámetro:</strong> 310 mm</p>
+                    <p><strong>Pinza:</strong> Brembo de 2 pistones ABS</p>
+                    <h2>Rueda delantera</h2>
+                    <p><strong>Diámetro de llanta:</strong> 19 "</p>
+                    <p><strong>Garganta de llanta:</strong> 3.5</p>
+                    <p><strong>Material de llanta:</strong> Aluminio</p>
+                    <p><strong>Medida de neumáticos:</strong> 120/70-R19</p>
+                    <h2>Rueda trasera</h2>
+                    <p><strong>Diámetro de llanta:</strong> 17 "</p>
+                    <p><strong>Garganta de llanta:</strong> 6</p>
+                    <p><strong>Material de llanta:</strong> Aluminio</p>
+                    <p><strong>Medida de neumáticos:</strong> 200/50-R17</p>
+                    <h2>Dimensiones y peso</h2>
+                    <p><strong>Longitud máxima:</strong> 2.340 mm</p>
+                    <p><strong>Anchura máxima:</strong> 800 mm</p>
+                    <p><strong>Altura máxima:</strong> 1.120 mm</p>
+                    <p><strong>Distancia entre ejes:</strong> 1.615 mm</p>
+                    <p><strong>Altura de asiento:</strong> 700 mm</p>
+                    <p><strong>Avance:</strong> 151 mm</p>
+                    <p><strong>Ángulo de lanzamiento:</strong> 32 º</p>
+                    <p><strong>Capacidad del depósito:</strong> 22 l.</p>
+                    <h2>Equipamiento</h2>
+                    <h3>Confort</h3>
+                    <p>Guantera</p>
+                    <p>Alarma</p>
+                    <p>Arranque eléctrico</p>
+                    <p>Puños calefactables</p>
+                    <p>Asiento calefactable</p>
+                    <p>Pantalla regulable manual</p>
+                    <p>Pantalla regulable eléctrica</p>
+                    <p>Radio</p>
+                    <p>Amortiguador de dirección</p>
+                    <p>Caballete central</p>
+                    <p>Pata de cabra</p>
+                    <h3>Instrumentación</h3>
+                    <p>Cuentarrevoluciones</p>
+                    <p>Cronómetro</p>
+                    <p>Nivel de gasolina</p>
+                    <p>Temperatura de refrigerante</p>
+                    <p>Temperatura ambiente</p>
+                    <p>Luz sobre régimen</p>
+                    <p>Indicador de marcha engranada</p>
+                    <p>Recordatorio de revisiones</p>
+                    <h3>Electrónica</h3>
+                    <p>Control de tracción</p>
+                    <p>ABS</p>
+                    <button>Contactar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br><br><br>
 <!-----------------------------------------------------ZONA DEL PIE DE PAGINA------------------------------------------->
 <!-- Footer -->
 <footer class="w3-center fondo-footer w3-padding-16">
@@ -191,6 +599,5 @@ style="display:none" id="mySidebar">
 </footer>
 
 <script src="js/4.0 ventademotos.js"></script>
-<script src="js/0.0 terminos-y-condiciones.js"></script>
 </body>
 </html>

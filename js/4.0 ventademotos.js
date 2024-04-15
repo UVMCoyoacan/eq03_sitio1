@@ -1,32 +1,58 @@
-let mostrador = document.getElementById("mostrador");
-let seleccion = document.getElementById("seleccion");
-let imgSeleccionada = document.getElementById("img");
-let modeloSeleccionado = document.getElementById("modelo");
-let descripSeleccionada = document.getElementById("descripcion");
-let precioSeleccionado = document.getElementById("precio");
 
-function cargar(item){
-    quitarBordes();
-    mostrador.style.width = "60%";
-    seleccion.style.width = "40%";
-    seleccion.style.opacity = "1";
-    item.style.border = "3px solid red";
-    imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
-    modeloSeleccionado.innerHTML =  item.getElementsByTagName("p")[0].innerHTML;
-    descripSeleccionada.innerHTML = "Descripción del modelo";
-    precioSeleccionado.innerHTML =  item.getElementsByTagName("span")[0].innerHTML;
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
 }
 
-function cerrar(){
-    mostrador.style.width = "100%";
-    seleccion.style.width = "0%";
-    seleccion.style.opacity = "0";
-    quitarBordes();
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
 }
+// REDIRIGIR A NUMERO DE WHATS APP
+function redirigir() {
+  // Redirigir a la página deseada
+  window.location.href = 'https://wa.me/5513045263';
+}
+// venta
+// JavaScript para modales
 
-function quitarBordes(){
-    var items = document.getElementsByClassName("item");
-    for(i=0;i <items.length; i++){
-        items[i].style.border = "none";
+function openModal(modalId, imgSrc) {
+    var modal = document.getElementById(modalId);
+    var modalBackground = document.getElementById("modal-background");
+    modal.style.display = "block";
+    modalBackground.classList.add("active");
+    // Aquí puedes agregar más código si necesitas realizar acciones adicionales al abrir el modal
+  }
+  
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    var modalBackground = document.getElementById("modal-background");
+    modal.style.display = "none";
+    modalBackground.classList.remove("active");
+    // Aquí puedes agregar más código si necesitas realizar acciones adicionales al cerrar el modal
+  }
+  
+  // Aquí puedes agregar más funciones o código JavaScript según tus necesidades
+
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
     }
-}
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+
+  
