@@ -54,5 +54,15 @@ function openModal(modalId, imgSrc) {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
-
+// whatsapp
+function sendMessage() {
+  // Número de WhatsApp al que deseas enviar el mensaje
+  var phoneNumber = "5513045263";
+  // Mensaje que deseas enviar
+  var message = encodeURIComponent("¡Hola buen día! Estoy interesado en la moto anunciada en su página, me encuentro interesada en  comprarla ¿podemos llegar a un acuerdo ?");
+  // URL para abrir WhatsApp con el número y el mensaje
+  var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + message;
+  // Abrir WhatsApp en una nueva ventana o pestaña
+  window.open(whatsappUrl, "_blank");
+}
   
