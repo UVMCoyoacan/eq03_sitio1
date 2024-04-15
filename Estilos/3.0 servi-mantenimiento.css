@@ -305,4 +305,7 @@ body{
   .sn-deco{
     text-decoration: none;
   }
-  
+  .ajust{
+    width: 55%;
+    height: auto;
+  }
